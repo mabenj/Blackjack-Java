@@ -29,6 +29,7 @@ public class Game {
 	private LANG language;
 	
 	private boolean easterEgg;
+	private int egX, egY;
 	
 	/**
 	 * Luo Game-instanssin.
@@ -43,6 +44,10 @@ public class Game {
 		dealer = new Dealer();
 		
 		deck = populateDeckList(numDecks);
+		
+		easterEgg = false;
+		egX = 220;
+		egY = 180;
 	}
 	
 	/**
@@ -97,6 +102,42 @@ public class Game {
 	 */
 	public boolean getEasterEgg() {
 		return easterEgg;
+	}
+	
+	/**
+	 * Palauttaa "Easter Eggin" x-koordinaatin.
+	 * 
+	 * @return	int	Easter Eggin x-koordinaatti
+	 */
+	public int getEgX() {
+		return egX;
+	}
+	
+	/**
+	 * Asettaa "Easter Eggin" x-koordinaatin.
+	 * 
+	 * @param x	Easter Eggin x-koordinaatti
+	 */
+	public void setEgX(int x) {
+		this.egX = x;
+	}
+	
+	/**
+	 * Palauttaa "Easter Eggin" y-koordinaatin.
+	 * 
+	 * @return	int	Easter Eggin y-koordinaatti
+	 */
+	public int getEgY() {
+		return egY;
+	}
+	
+	/**
+	 * Asettaa "Easter Eggin" y-koordinaatin.
+	 * 
+	 * @param y	Easter Eggin y-koordinaatti
+	 */
+	public void setEgY(int y) {
+		this.egY = y;
 	}
 	
 	/**

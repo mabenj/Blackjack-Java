@@ -24,14 +24,16 @@ public class BlackjackFrame extends JFrame{
 	 * @param height	ikkunan korkeus
 	 * @param game	pelin Game-instanssi
 	 */
-	public BlackjackFrame(int width, int height, Game game) {
+	public BlackjackFrame(int width, int height, Game game) {		
 		List<Image> icons = game.getIcons();
 		this.setIconImages(icons);
 		
 		BlackjackPanel bjPanel = new BlackjackPanel(width, height, game, this);
+		EasterEgg eg = new EasterEgg(game, bjPanel);
 		
 		this.setFocusable(true);
-		this.addKeyListener(new EasterEggListener(game, bjPanel));
+		this.addKeyListener(eg);
+		this.addMouseListener(eg);
 		this.setTitle("Blackjack");
 		this.setSize(width, height);
 		this.setLocationRelativeTo(null);

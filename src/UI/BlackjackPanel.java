@@ -550,8 +550,7 @@ public class BlackjackPanel extends JPanel{
 		
 		// easter egg
 		if (game.getEasterEgg()) {
-			g2.drawImage(jliha.getImage(), 220, 180, 250, 200, null);
-			game.setEasterEgg(false);
+			g2.drawImage(jliha.getImage(), game.getEgX(), game.getEgY(), 250, 200, null);
 		}
 		
 	}	
