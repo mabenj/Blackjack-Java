@@ -23,14 +23,10 @@ public class EasterEgg implements KeyListener, MouseListener, Runnable{
 	private int x, y, width, height;
 	private boolean right, left, up, down;
 	
-	private Thread thread;
-	
 	public EasterEgg(Game game, BlackjackPanel panel) {
 		this.game = game;
 		this.panel = panel;
 		sb = new StringBuilder();
-		
-		thread = new Thread(this);
 		
 		x = game.getEgX();
 		y = game.getEgY();	
@@ -47,6 +43,7 @@ public class EasterEgg implements KeyListener, MouseListener, Runnable{
 	
 	@Override
 	public void run() {
+		System.out.println("Easter Egg thread running.");
 
 		while (game.getEasterEgg()) {
 			if (x + 250 >= width) {
@@ -96,6 +93,9 @@ public class EasterEgg implements KeyListener, MouseListener, Runnable{
 				e.printStackTrace();
 			}
 		}
+		
+		System.out.println("EasterEgg thread shutting down.");
+		Thread.currentThread().interrupt();
 	}
 	
 	public void moveIt() {
@@ -156,7 +156,7 @@ public class EasterEgg implements KeyListener, MouseListener, Runnable{
 			}					
 		};
 		
-		timer.schedule(tt, 10, 10);
+		timer.schedule(tt, 7, 7);
 	}
 
 	@Override
@@ -176,10 +176,10 @@ public class EasterEgg implements KeyListener, MouseListener, Runnable{
 			game.setEasterEgg(true);
 			panel.repaint();
 			
-			//moveIt();
-			thread.start();
-			
 			System.out.println("Easter Egg Activated");
+			
+			new Thread(this).start();
+			
 		}
 		
 	}
