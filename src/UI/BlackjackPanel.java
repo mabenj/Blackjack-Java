@@ -307,7 +307,7 @@ public class BlackjackPanel extends JPanel{
 		blackjack = "BLACKJACK";
 		or = " or ";
 		bust = "BUST";
-		push = "PUSH";
+		push = "     PUSH";
 		wins = " wins!";
 		dealer_wins = "The Dealer wins";
 		bet_win = "BET WIN: ";
@@ -335,7 +335,7 @@ public class BlackjackPanel extends JPanel{
 		bust = "  YLI";
 		push = "TASATULOS";
 		wins = " voitti!";
-		dealer_wins = "Jakaja voitti";
+		dealer_wins = "      Jakaja voitti";
 		bet_win = "VOITTO: ";
 		
 		//jbuttons
@@ -507,7 +507,7 @@ public class BlackjackPanel extends JPanel{
 			
 			if(!game.getPlayer().isWinner() && !game.getDealer().isWinner()) {//tasapeli
 				g2.setColor(Color.black);
-				g2.drawString(push, 33, 230);
+				g2.drawString(push, 300, 230);
 				
 				game.push();
 				
