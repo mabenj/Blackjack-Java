@@ -94,7 +94,7 @@ public class EasterEgg implements KeyListener, MouseListener, Runnable{
 			}
 		}
 		
-		System.out.println("EasterEgg thread shutting down.");
+		System.out.println("Easter Egg thread shutting down.");
 		Thread.currentThread().interrupt();
 	}
 	
