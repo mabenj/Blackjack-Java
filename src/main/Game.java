@@ -180,7 +180,8 @@ public class Game {
 		player.setReadyToPlay(true);
 		player.setIsStanding(false);
 		player.setWinner(false);
-		//player.setBetWin(0);
+		//player.setBetPlaced(false);
+		player.setBetWin(0);
 		
 		dealer.setHasBlackjack(false);
 		dealer.setIsBust(false);

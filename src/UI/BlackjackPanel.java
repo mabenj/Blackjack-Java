@@ -691,6 +691,8 @@ public class BlackjackPanel extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
+			repaint();
+			
 			if(game.getPlayer().isReadyToPlay() && !game.getPlayer().betPlaced()){
 				game.resetPlayers();
 				

@@ -16,7 +16,7 @@ public class Player {
 	
 	private boolean hasBlackjack;
 	private boolean isBust;
-	private boolean readyToPlay;
+	public boolean readyToPlay;
 	private boolean isStanding;
 	private boolean win;
 	private boolean betPlaced;
