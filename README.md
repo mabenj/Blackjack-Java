@@ -47,6 +47,7 @@ menee yli 21:n tai saa suuremman summan kuin pelaaja. Tasatilanteessa (englannik
 - numerokortit: sama kuin kortin numero (2-10)
 - kuvakortit, paitsi ässä: 10
 - ässä: 1 tai 11 pelaajan toiveesta riippuen
+
 Jos pelaajalle jaettujen kahden ensimmäisen kortin arvojen summa on 21 (ts. kymppi tai kuvakortti + ässä), on pelaajalla blackjack. 
 Tällä hän voittaa jakajan kaikki muut kädet paitsi jakajan oman blackjackin, jolloin peli menee tasan. Jos pelaajalla on blackjack 
 ja jakajalla ei, pelaaja saa panoksensa takaisin voittosuhteella 3:2.
