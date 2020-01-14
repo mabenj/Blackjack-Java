@@ -1,8 +1,12 @@
-# Java Blackjack
+# Blackjack Java
 
-<!-- ![alt text](https://i.gyazo.com/3a1507e557e118fda349d7a4990234d0.png "Kuvakaappaus pelistä")-->
+![alt text](https://i.gyazo.com/3a1507e557e118fda349d7a4990234d0.png "Kuvakaappaus pelistä")
+
+Blackjack Java on yksinkertainen versio blackjack-pelistä. Pelin käyttöliittymä on toteutettu hyödyntäen Javan Swing-kirjastoa.
 
 ## Asennus
+Toimiakseen peli vaatii vähintään Javan version 8.
+
 Peliä pääsee pelaamaan joko kloonaamalla repon omalle ohjelmointiympäristölle ja suorittamalla ohjelma sitä kautta
 tai lataamalla ja suorittamalla Blackjack.exe-tiedosto
 [latauslinkistä](https://github.com/mabenj/Blackjack-Java/raw/master/Blackjack.exe "Blackjack.exe").
